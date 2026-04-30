@@ -63,210 +63,117 @@
     <!-- Intro Loader -->
     <div id="intro-loader" class="fixed inset-0 z-[999] bg-dark flex flex-col items-center justify-center transition-opacity duration-700">
         <div class="relative mb-8">
-            <div class="w-24 h-24 rounded-2xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center shadow-glow intro-logo">
-                <span class="font-syne font-bold text-white text-3xl tracking-widest">RA</span>
+            <div class="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center shadow-glow intro-logo">
+                <span class="font-syne font-bold text-white text-2xl sm:text-3xl tracking-widest">RA</span>
             </div>
             <div class="absolute -inset-4 rounded-3xl border border-dashed border-brand/40 animate-spin-slow"></div>
         </div>
-        <p class="font-syne font-bold text-2xl text-white mb-2 intro-name">Ryan ANZOUMANA</p>
-        <p class="font-mono text-sm text-text-secondary mb-8 intro-title">Dev & Administration Réseau</p>
-        <div class="w-48 h-1 rounded-full bg-dark-raised overflow-hidden border border-border">
+        <p class="font-syne font-bold text-xl sm:text-2xl text-white mb-2 intro-name">Ryan ANZOUMANA</p>
+        <p class="font-mono text-xs sm:text-sm text-text-secondary mb-8 intro-title">Dev & Administration Réseau</p>
+        <div class="w-40 sm:w-48 h-1 rounded-full bg-dark-raised overflow-hidden border border-border">
             <div id="loader-bar" class="h-full bg-gradient-to-r from-brand to-brand-light rounded-full"></div>
         </div>
     </div>
 
     <!-- Navbar -->
     <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-dark/80 backdrop-blur-md border-b border-border">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+        <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
                 <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center shadow-glow transition-transform group-hover:scale-105">
-                        <span class="font-syne font-bold text-white text-sm tracking-widest">RA</span>
+                <a href="#" class="flex items-center gap-2 sm:gap-3 group flex-shrink-0">
+                    <div class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center shadow-glow transition-transform group-hover:scale-105">
+                        <span class="font-syne font-bold text-white text-xs sm:text-sm tracking-widest">RA</span>
                     </div>
-                    <span class="font-syne font-bold text-xl hidden sm:block tracking-wide">RYAN<span class="text-brand">.</span></span>
+                    <span class="font-syne font-bold text-lg sm:text-xl hidden sm:block tracking-wide">RYAN<span class="text-brand">.</span></span>
                 </a>
                 
                 <!-- Nav Links -->
-                <nav class="hidden lg:flex items-center gap-2">
-                    <a href="#home" class="px-5 py-2 text-sm font-medium transition-colors text-brand relative group">
+                <nav class="hidden lg:flex items-center gap-1">
+                    <a href="#home" class="px-4 py-2 text-sm font-medium transition-colors text-brand relative group">
                         Accueil
-                        <span class="absolute bottom-0 left-5 right-5 h-px bg-brand"></span>
+                        <span class="absolute bottom-0 left-4 right-4 h-px bg-brand"></span>
                     </a>
-                    <a href="#about" class="px-5 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
+                    <a href="#about" class="px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
                         À Propos
-                        <span class="absolute bottom-0 left-5 right-5 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        <span class="absolute bottom-0 left-4 right-4 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </a>
-                    <a href="#skills" class="px-5 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
+                    <a href="#skills" class="px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
                         Compétences
-                        <span class="absolute bottom-0 left-5 right-5 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        <span class="absolute bottom-0 left-4 right-4 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </a>
-                    <a href="#projects" class="px-5 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
+                    <a href="#projects" class="px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
                         Projets
-                        <span class="absolute bottom-0 left-5 right-5 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        <span class="absolute bottom-0 left-4 right-4 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </a>
-                    <a href="#parcours" class="px-5 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
+                    <a href="#parcours" class="px-4 py-2 text-sm font-medium transition-colors text-text-secondary hover:text-white group relative">
                         Parcours
-                        <span class="absolute bottom-0 left-5 right-5 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                        <span class="absolute bottom-0 left-4 right-4 h-px bg-brand opacity-0 group-hover:opacity-100 transition-opacity"></span>
                     </a>
                 </nav>
 
                 <!-- Right Actions -->
-                <div class="flex items-center gap-4">
-                    <button id="theme-toggle" class="w-10 h-10 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:border-border-brand hover:text-brand transition-all">
+                <div class="flex items-center gap-1.5 sm:gap-3">
+                    <button id="theme-toggle" class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:border-border-brand hover:text-brand transition-all text-sm flex-shrink-0">
                         <i class="fa-solid fa-moon"></i>
                     </button>
-                    <a href="#contact" class="hidden sm:flex btn-gradient text-sm px-5 py-2.5 rounded-xl font-semibold">
-                        Me contacter
+                    <button id="lang-toggle" class="w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:border-border-brand hover:text-brand transition-all text-xs font-bold flex-shrink-0">
+                        FR
+                    </button>
+                    <a href="#contact" class="hidden sm:flex btn-gradient text-xs sm:text-sm px-3 sm:px-5 py-2 sm:py-2.5 rounded-xl font-semibold flex-shrink-0">
+                        Contact
                     </a>
-                    <button id="mobile-menu-btn" class="lg:hidden w-10 h-10 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:text-brand transition-all">
-                        <i class="fa-solid fa-bars"></i>
+                    <button id="mobile-menu-btn" class="lg:hidden w-8 h-8 sm:w-10 sm:h-10 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:border-border-brand hover:text-brand transition-all flex-shrink-0">
+                        <i class="fa-solid fa-bars text-sm"></i>
                     </button>
                 </div>
             </div>
         </div>
+
         <!-- Mobile Menu -->
-        <nav id="mobile-menu" class="hidden lg:hidden border-t border-border bg-dark/95 backdrop-blur-lg px-6 py-4 space-y-3">
-            <a href="#home" class="block text-sm font-medium text-text-secondary hover:text-brand transition-colors py-2">Accueil</a>
-            <a href="#about" class="block text-sm font-medium text-text-secondary hover:text-brand transition-colors py-2">À Propos</a>
-            <a href="#parcours" class="block text-sm font-medium text-text-secondary hover:text-brand transition-colors py-2">Parcours</a>
-            <a href="#skills" class="block text-sm font-medium text-text-secondary hover:text-brand transition-colors py-2">Compétences</a>
-            <a href="#projects" class="block text-sm font-medium text-text-secondary hover:text-brand transition-colors py-2">Projets</a>
-            <a href="#contact" class="block text-sm font-medium text-brand py-2">Me contacter</a>
-        </nav>
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark/95 backdrop-blur-md border-b border-border">
+            <div class="px-3 py-4 space-y-2">
+                <a href="#home" class="block px-4 py-3 text-sm font-medium text-brand rounded-lg hover:bg-dark-raised transition-colors">Accueil</a>
+                <a href="#about" class="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-white hover:bg-dark-raised rounded-lg transition-colors">À Propos</a>
+                <a href="#skills" class="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-white hover:bg-dark-raised rounded-lg transition-colors">Compétences</a>
+                <a href="#projects" class="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-white hover:bg-dark-raised rounded-lg transition-colors">Projets</a>
+                <a href="#parcours" class="block px-4 py-3 text-sm font-medium text-text-secondary hover:text-white hover:bg-dark-raised rounded-lg transition-colors">Parcours</a>
+                <a href="#contact" class="block px-4 py-3 text-sm font-medium btn-gradient rounded-lg font-semibold text-center">Contact</a>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main class="pt-16 sm:pt-20">
         <!-- Hero Section -->
-        <section id="home" class="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
-            <div class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGNpcmNsZSBjeD0iMSIgY3k9IjEiIHI9IjEiIGZpbGw9InJnYmEoMjU1LDI1NSwyNTUsMC4wNSkiLz48L3N2Zz4=')] [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
-            <div class="absolute top-1/4 left-1/4 w-[500px] h-[500px] rounded-full bg-brand/10 blur-[120px] pointer-events-none animate-blob"></div>
-            <div class="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] rounded-full bg-gray-500/10 blur-[120px] pointer-events-none animate-blob" style="animation-delay: 2s;"></div>
-
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
-                <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-                    
-                    <div class="order-2 lg:order-1 reveal-left">
-                        <span class="inline-flex items-center gap-3 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-6">
-                            <span class="w-8 h-px bg-brand"></span>
-                            Hello, je suis
-                        </span>
-                        <h1 class="font-syne font-extrabold text-5xl sm:text-6xl lg:text-7xl leading-[1.1] mb-6">
-                            Ryan <br/>
-                            <span class="gradient-text">ANZOUMANA</span>
-                        </h1>
-                        <div class="flex items-center gap-1 mb-8">
-                            <span class="font-mono text-lg text-brand/80 font-semibold">&gt;&nbsp;</span>
-                            <span id="typewriter" class="font-mono text-lg text-brand/80 font-semibold"></span>
-                            <span class="w-2 h-6 bg-brand animate-blink"></span>
-                        </div>
-                        
-                        <p class="text-text-secondary text-base lg:text-lg leading-relaxed mb-10 max-w-xl font-dm">
-                            Étudiant en informatique passionné par l'IT hybride. À la croisée entre le développement web/système et l'administration réseau, je conçois des solutions performantes et des infrastructures robustes.
-                        </p>
-
-                        <div class="flex flex-wrap items-center gap-4 mb-12">
-                            <a href="#projects" class="btn-gradient px-8 py-3.5 rounded-xl font-semibold text-sm shadow-glow flex items-center gap-2 hover:scale-105 transition-transform">
-                                Voir mes projets <i class="fa-solid fa-arrow-right"></i>
-                            </a>
-                        </div>
-
-                        <div class="flex items-center gap-4">
-                            <a href="https://github.com/frims-bit" target="_blank" class="w-12 h-12 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:text-brand hover:border-border-brand transition-all hover:-translate-y-1">
-                                <i class="fa-brands fa-github text-xl"></i>
-                            </a>
-                            <a href="mailto:anzoumanaryan20@gmail.com" class="w-12 h-12 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:text-brand hover:border-border-brand transition-all hover:-translate-y-1">
-                                <i class="fa-solid fa-envelope text-xl"></i>
-                            </a>
-                            <a href="https://wa.me/22870933462" target="_blank" class="w-12 h-12 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:text-[#25D366] hover:border-[#25D366]/50 transition-all hover:-translate-y-1">
-                                <i class="fa-brands fa-whatsapp text-xl"></i>
-                            </a>
-                            <a href="https://instagram.com/ryan.faik_" target="_blank" class="w-12 h-12 rounded-xl border border-border bg-dark-raised flex items-center justify-center text-text-secondary hover:text-[#E4405F] hover:border-[#E4405F]/50 transition-all hover:-translate-y-1">
-                                <i class="fa-brands fa-instagram text-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="order-1 lg:order-2 flex justify-center lg:justify-end relative reveal-right">
-                        <div class="relative w-[280px] h-[280px] sm:w-[400px] sm:h-[400px]">
-                            <div class="absolute inset-0 rounded-full border border-border"></div>
-                            <div class="absolute inset-[-20px] rounded-full border border-dashed border-border-brand animate-spin-slow"></div>
-                            
-                            <div class="absolute inset-4 rounded-[40%] overflow-hidden border-2 border-brand/30 shadow-glow bg-dark-raised flex items-center justify-center z-20">
-                                <div class="absolute inset-0 bg-gradient-to-br from-brand/20 to-transparent z-10"></div>
-                                <img src="ryan.jpg" alt="Ryan ANZOUMANA" class="w-full h-full object-cover object-top">
-                            </div>
-
-                            <div class="absolute top-0 right-4 z-30 animate-float">
-                                <div class="glass-card px-4 py-2 rounded-xl shadow-card text-xs font-semibold flex items-center gap-2 border border-border">
-                                    <i class="fa-solid fa-network-wired text-brand"></i> Réseaux
-                                </div>
-                            </div>
-                            <div class="absolute top-1/2 -left-8 z-30 animate-float-delayed">
-                                <div class="glass-card px-4 py-2 rounded-xl shadow-card text-xs font-semibold flex items-center gap-2 border border-border">
-                                    <i class="fa-brands fa-docker text-brand"></i> DevOps
-                                </div>
-                            </div>
-                            <div class="absolute bottom-8 right-0 z-30 animate-float">
-                                <div class="glass-card px-4 py-2 rounded-xl shadow-card text-xs font-semibold flex items-center gap-2 border border-border">
-                                    <i class="fa-solid fa-code text-brand"></i> Code
-                                </div>
-                            </div>
-
-                            <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 glass-card rounded-2xl px-6 py-4 flex items-center gap-4 z-30 border border-border w-max">
-                                <div class="w-10 h-10 rounded-full bg-brand/20 flex items-center justify-center text-brand">
-                                    <i class="fa-solid fa-bolt"></i>
-                                </div>
-                                <div>
-                                    <p class="font-syne font-bold text-lg text-white">Hybride</p>
-                                    <p class="text-text-secondary text-xs font-mono">Dev / SysAdmin</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <section id="home" class="py-20 sm:py-32 relative overflow-hidden bg-dark">
+            <div class="absolute inset-0 overflow-hidden pointer-events-none">
+                <div class="absolute -top-40 -right-40 w-80 h-80 bg-brand/20 rounded-full blur-[100px] animate-blob"></div>
+                <div class="absolute -bottom-40 -left-40 w-80 h-80 bg-brand/10 rounded-full blur-[100px] animate-blob animation-delay-2000"></div>
             </div>
-        </section>
 
-        <!-- Parcours Section -->
-        <section id="parcours" class="py-24 bg-dark-raised relative border-b border-border">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-16 text-center reveal-up">
-                    <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-4">
-                        <span class="w-6 h-px bg-brand"></span>
-                        Timeline
-                        <span class="w-6 h-px bg-brand"></span>
-                    </span>
-                    <h2 class="font-syne font-bold text-4xl lg:text-5xl text-white">Parcours Scolaire</h2>
-                </div>
-
-                <div class="reveal-up">
-                    <div class="relative pl-6 sm:pl-8 mx-auto max-w-3xl">
-                        <div class="absolute left-0 top-2 bottom-0 w-px bg-gradient-to-b from-brand via-border to-transparent"></div>
-                        
-                        <div class="relative mb-12 group">
-                            <div class="absolute -left-[29px] sm:-left-[37px] top-2 w-4 h-4 rounded-full bg-brand shadow-[0_0_15px_rgba(229,9,20,0.8)] border-4 border-dark-raised"></div>
-                            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-border hover:border-border-brand transition-colors">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
-                                    <h4 class="font-syne font-bold text-xl text-white">Licence Informatique</h4>
-                                    <span class="px-3 py-1.5 rounded-lg bg-brand/10 text-brand text-xs font-mono border border-brand/20 w-fit">En cours</span>
-                                </div>
-                                <p class="text-brand text-sm font-bold mb-3 uppercase tracking-wider flex items-center gap-2">
-                                    <i class="fa-solid fa-building-columns"></i> IAI Togo
-                                </p>
-                                <p class="text-text-secondary text-base leading-relaxed">Approfondissement en réseaux, systèmes d'exploitation, algorithmie et développement logiciel. Formation axée sur la pratique et les technologies modernes de l'IT.</p>
-                            </div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+                <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                    <!-- Text -->
+                    <div class="reveal-left">
+                        <p class="text-sm font-mono text-brand font-semibold mb-4">Bienvenue 👋</p>
+                        <h1 class="font-syne font-bold text-4xl sm:text-5xl lg:text-7xl text-white leading-tight mb-6">
+                            Je suis <span id="typewriter" class="gradient-text">Développeur</span>
+                        </h1>
+                        <p class="text-base sm:text-lg text-text-secondary mb-8 max-w-lg leading-relaxed">
+                            Étudiant en informatique passionné par le développement web et l'administration réseau. Je construis des solutions scalables et cherche mon premier stage professionnel au Togo.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4">
+                            <a href="#projects" class="btn-gradient text-sm sm:text-base px-6 sm:px-8 py-3 rounded-xl font-semibold text-center">Voir mes projets</a>
+                            <a href="#contact" class="border border-border px-6 sm:px-8 py-3 rounded-xl font-semibold hover:border-border-brand hover:text-brand transition-colors text-center text-sm sm:text-base">Prenons contact</a>
                         </div>
+                    </div>
 
-                        <div class="relative group">
-                            <div class="absolute -left-[29px] sm:-left-[37px] top-2 w-4 h-4 rounded-full bg-text-secondary border-4 border-dark-raised"></div>
-                            <div class="glass-card p-6 sm:p-8 rounded-3xl border border-border hover:border-border-brand transition-colors">
-                                <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-4 gap-2">
-                                    <h4 class="font-syne font-bold text-xl text-white">Baccalauréat</h4>
-                                    <span class="text-text-secondary text-xs font-mono px-3 py-1.5 rounded-lg bg-dark border border-border w-fit">2023 - 2024</span>
-                                </div>
-                                <p class="text-text-secondary text-base leading-relaxed">Obtention du diplôme marquant le début de mes études supérieures, avec une forte inclinaison pour les sciences exactes et l'informatique.</p>
-                            </div>
+                    <!-- Image -->
+                    <div class="reveal-right relative h-96 sm:h-[500px]">
+                        <div class="absolute inset-0 bg-gradient-to-br from-brand/30 to-transparent rounded-3xl blur-2xl opacity-50"></div>
+                        <img src="ryan.jpg" alt="Ryan ANZOUMANA" class="relative w-full h-full object-cover rounded-3xl border border-border shadow-card">
+                        <div class="absolute top-8 right-8 glass-card rounded-2xl px-6 py-4 text-center border border-border">
+                            <p class="font-mono text-xs text-text-secondary mb-2">BASÉ À</p>
+                            <p class="font-syne font-bold text-white">Lomé, Togo 🇹🇬</p>
                         </div>
                     </div>
                 </div>
@@ -274,308 +181,225 @@
         </section>
 
         <!-- About Section -->
-        <section id="about" class="py-24 bg-dark relative">
+        <section id="about" class="py-20 sm:py-32 bg-dark relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-16 text-center reveal-up">
+                <div class="mb-12 sm:mb-16 text-center reveal-up">
                     <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-4">
-                        <span class="w-6 h-px bg-brand"></span>
-                        Qui suis-je ?
-                        <span class="w-6 h-px bg-brand"></span>
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
+                        À Propos
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
                     </span>
-                    <h2 class="font-syne font-bold text-4xl lg:text-5xl text-white">À Propos de Moi</h2>
+                    <h2 class="font-syne font-bold text-3xl sm:text-4xl lg:text-5xl text-white">Qui suis-je ?</h2>
                 </div>
 
-                <div class="grid lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-                    <!-- About Text & Info Grid (Span 7) -->
-                    <div class="lg:col-span-7 reveal-left">
-                        <p class="text-text-secondary leading-relaxed mb-8 text-base lg:text-lg font-dm">
-                            Étudiant en Licence informatique et technicien hybride, je ne me limite pas au code. Je navigue entre le développement d'applications, l'administration système (Linux, Docker) et la gestion des réseaux. 
-                            <br><br>
-                            Actuellement à la recherche d'opportunités professionnelles (stages, alternances ou freelance), mon but est d'apporter mon expertise pluridisciplinaire aux entreprises pour résoudre des problèmes complexes et garantir des infrastructures performantes.
-                        </p>
-
-                        <!-- Grille d'informations -->
-                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-6 pt-8 border-t border-border">
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-dark-raised flex items-center justify-center text-brand border border-border flex-shrink-0 shadow-card">
-                                    <i class="fa-solid fa-user"></i>
-                                </div>
-                                <div>
-                                    <span class="text-text-secondary text-xs font-mono uppercase tracking-wider block mb-1">Identité</span>
-                                    <span class="text-white text-sm font-medium">Ryan ANZOUMANA</span>
-                                </div>
+                <div class="grid md:grid-cols-2 gap-8 lg:gap-12">
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-left">
+                        <h3 class="font-syne font-bold text-2xl sm:text-3xl text-white mb-6">Parcours</h3>
+                        <div class="space-y-6">
+                            <div class="pb-6 border-b border-border/50">
+                                <p class="text-brand font-mono text-xs font-bold mb-2">2024 – Aujourd'hui</p>
+                                <h4 class="font-syne font-bold text-lg sm:text-xl text-white mb-2">Licence Informatique</h4>
+                                <p class="text-text-secondary text-sm">IAI-TOGO • 2ème Année</p>
                             </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-dark-raised flex items-center justify-center text-brand border border-border flex-shrink-0 shadow-card">
-                                    <i class="fa-solid fa-phone"></i>
-                                </div>
-                                <div>
-                                    <span class="text-text-secondary text-xs font-mono uppercase tracking-wider block mb-1">Téléphone</span>
-                                    <span class="text-white text-sm font-medium">+228 70 93 34 62</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-dark-raised flex items-center justify-center text-brand border border-border flex-shrink-0 shadow-card">
-                                    <i class="fa-solid fa-envelope"></i>
-                                </div>
-                                <div>
-                                    <span class="text-text-secondary text-xs font-mono uppercase tracking-wider block mb-1">Email</span>
-                                    <span class="text-white text-sm font-medium">anzoumanaryan20@gmail.com</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-dark-raised flex items-center justify-center text-brand border border-border flex-shrink-0 shadow-card">
-                                    <i class="fa-solid fa-earth-africa"></i>
-                                </div>
-                                <div>
-                                    <span class="text-text-secondary text-xs font-mono uppercase tracking-wider block mb-1">Nationalité</span>
-                                    <span class="text-white text-sm font-medium">Togolaise</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-dark-raised flex items-center justify-center text-brand border border-border flex-shrink-0 shadow-card">
-                                    <i class="fa-solid fa-language"></i>
-                                </div>
-                                <div>
-                                    <span class="text-text-secondary text-xs font-mono uppercase tracking-wider block mb-1">Langues</span>
-                                    <span class="text-white text-sm font-medium">FR (C2) · EN (B1)</span>
-                                </div>
-                            </div>
-                            <div class="flex items-start gap-4">
-                                <div class="w-10 h-10 rounded-xl bg-brand/10 flex items-center justify-center text-brand border border-brand/30 flex-shrink-0 shadow-glow">
-                                    <i class="fa-solid fa-briefcase"></i>
-                                </div>
-                                <div>
-                                    <span class="text-brand text-xs font-mono uppercase tracking-wider block mb-1">Disponibilité</span>
-                                    <span class="text-white text-sm font-medium">✓ En recherche d'opportunités</span>
-                                </div>
+                            <div>
+                                <p class="text-brand font-mono text-xs font-bold mb-2">2022 – 2024</p>
+                                <h4 class="font-syne font-bold text-lg sm:text-xl text-white mb-2">Baccalauréat Série D</h4>
+                                <p class="text-text-secondary text-sm">CS Le Savoir de Kohe • Lomé</p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Second Image (Span 5) -->
-                    <div class="lg:col-span-5 reveal-right mt-12 lg:mt-0">
-                        <div class="relative w-[90%] aspect-[4/5] sm:max-w-md mx-auto lg:max-w-none">
-                            <div class="absolute inset-0 bg-gradient-to-tr from-brand/30 to-transparent rounded-[2rem] translate-x-4 translate-y-4 border border-border"></div>
-                            <div class="absolute inset-0 bg-dark-raised rounded-[2rem] border border-border overflow-hidden z-10 flex items-center justify-center shadow-card group">
-                                <div class="absolute inset-0 bg-brand/5 group-hover:bg-brand/10 transition-colors duration-500 z-20"></div>
-                                <img src="ryan.jpg" alt="Ryan ANZOUMANA" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500">
-                            </div>
-                            
-                            <!-- Badges flottants pour l'image -->
-                            <div class="absolute -left-6 top-1/4 z-20 animate-float bg-dark-raised border border-border rounded-xl px-4 py-2 shadow-card flex items-center gap-2">
-                                <i class="fa-solid fa-server text-brand"></i>
-                                <span class="text-white text-xs font-bold font-mono">SysAdmin</span>
-                            </div>
-                            <div class="absolute -right-6 bottom-1/4 z-20 animate-float-delayed bg-dark-raised border border-border rounded-xl px-4 py-2 shadow-card flex items-center gap-2">
-                                <i class="fa-solid fa-terminal text-brand"></i>
-                                <span class="text-white text-xs font-bold font-mono">Scripting</span>
-                            </div>
-                        </div>
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-right">
+                        <h3 class="font-syne font-bold text-2xl sm:text-3xl text-white mb-6">Qui je suis</h3>
+                        <p class="text-text-secondary text-sm sm:text-base leading-relaxed mb-4">
+                            Je suis passionné par la technologie et l'innovation. Sérieux et autonome, j'aime résoudre des problèmes complexes et apprendre continuellement.
+                        </p>
+                        <p class="text-text-secondary text-sm sm:text-base leading-relaxed">
+                            En parallèle de mes études, je m'intéresse aux tendances technologiques, la cybersécurité et l'IA. Je suis à la recherche de mon premier stage pour mettre en pratique mes connaissances.
+                        </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Soft Skills Section -->
-        <section class="py-20 relative bg-dark">
+        <!-- Skills Section -->
+        <section id="skills" class="py-20 sm:py-32 bg-dark relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-14 text-center reveal-up">
-                    <h2 class="font-syne font-bold text-3xl lg:text-4xl text-white">Soft Skills & Approche</h2>
+                <div class="mb-12 sm:mb-16 text-center reveal-up">
+                    <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-4">
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
+                        Compétences
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
+                    </span>
+                    <h2 class="font-syne font-bold text-3xl sm:text-4xl lg:text-5xl text-white">Mes Capacités</h2>
                 </div>
 
-                <div class="grid md:grid-cols-3 gap-6">
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
                     <!-- Skill 1 -->
-                    <div class="glass-card p-6 rounded-2xl border border-border hover:-translate-y-2 transition-transform duration-300 reveal-up">
-                        <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center text-brand text-xl mb-6">
-                            <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-up">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center">
+                                <i class="fa-solid fa-code text-lg text-white"></i>
+                            </div>
+                            <h3 class="font-syne font-bold text-lg sm:text-xl text-white">Développement Web</h3>
                         </div>
-                        <h3 class="font-syne font-bold text-lg text-white mb-3">Pensée Analytique & Résolution</h3>
-                        <p class="text-text-secondary text-sm italic mb-4">"Diagnostic technique structuré, debugging méthodique, analyse causale et approche orientée solution."</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Erreurs Serveur 500</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Conflits Nginx/SSL</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Bugs NPM</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Dépannage Réseau</span>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">HTML / CSS / JavaScript</span>
+                                    <span class="text-xs text-brand font-bold">90%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="90%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">PHP / MySQL</span>
+                                    <span class="text-xs text-brand font-bold">75%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="75%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Skill 2 -->
-                    <div class="glass-card p-6 rounded-2xl border border-border hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 100ms;">
-                        <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center text-brand text-xl mb-6">
-                            <i class="fa-solid fa-sitemap"></i>
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-up">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center">
+                                <i class="fa-solid fa-cube text-lg text-white"></i>
+                            </div>
+                            <h3 class="font-syne font-bold text-lg sm:text-xl text-white">Backend & Mobile</h3>
                         </div>
-                        <h3 class="font-syne font-bold text-lg text-white mb-3">Architecture & Vision Systémique</h3>
-                        <p class="text-text-secondary text-sm italic mb-4">"Vision systémique globale, capacité à concevoir la scalabilité et la structuration claire de projets complexes."</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Séparation Admin/Public</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Logique Métier</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Orga. Modulaire</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Topologie Réseau</span>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Python</span>
+                                    <span class="text-xs text-brand font-bold">85%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="85%"></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Flutter</span>
+                                    <span class="text-xs text-brand font-bold">70%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="70%"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <!-- Skill 3 -->
-                    <div class="glass-card p-6 rounded-2xl border border-border hover:-translate-y-2 transition-transform duration-300 reveal-up" style="transition-delay: 200ms;">
-                        <div class="w-12 h-12 rounded-xl bg-brand/10 flex items-center justify-center text-brand text-xl mb-6">
-                            <i class="fa-solid fa-book-open-reader"></i>
-                        </div>
-                        <h3 class="font-syne font-bold text-lg text-white mb-3">Autonomie Technique Avancée</h3>
-                        <p class="text-text-secondary text-sm italic mb-4">"Capacité d’auto-formation très rapide, veille technologique constante et adaptation aux nouveaux environnements."</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Auto-formation</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Veille Sécurité</span>
-                            <span class="text-[10px] font-mono px-2 py-1 bg-dark-raised border border-border rounded text-text-secondary">Documentation Technique</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Technical Skills Section (Pro Style with Tracks) -->
-        <section id="skills" class="py-24 relative bg-dark-raised border-t border-border">
-            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
-                
-                <div class="mb-16 text-center reveal-up">
-                    <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-4">
-                        <span class="w-6 h-px bg-brand"></span>
-                        Outils & Langages
-                        <span class="w-6 h-px bg-brand"></span>
-                    </span>
-                    <h2 class="font-syne font-bold text-4xl lg:text-5xl text-white">Stack Technique</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-x-16 gap-y-6">
-                    
-                    <!-- Dev Skills -->
-                    <div>
-                        <h3 class="font-syne font-bold text-xl mb-6 text-white border-b border-border pb-2">Développement</h3>
-                        <div class="reveal-up mb-5">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-brands fa-python text-brand"></i> Python
-                                </span>
-                                <span class="font-mono text-sm text-brand">85%</span>
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-up">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center">
+                                <i class="fa-solid fa-server text-lg text-white"></i>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="85%"></div></div>
+                            <h3 class="font-syne font-bold text-lg sm:text-xl text-white">Sysadmin & Réseau</h3>
                         </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 100ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-solid fa-code text-brand"></i> HTML / CSS / JS
-                                </span>
-                                <span class="font-mono text-sm text-brand">90%</span>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Linux / Windows</span>
+                                    <span class="text-xs text-brand font-bold">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="80%"></div>
+                                </div>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="90%"></div></div>
-                        </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 200ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-brands fa-php text-brand"></i> PHP
-                                </span>
-                                <span class="font-mono text-sm text-brand">75%</span>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Cisco Networking</span>
+                                    <span class="text-xs text-brand font-bold">65%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="65%"></div>
+                                </div>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="75%"></div></div>
-                        </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 300ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-solid fa-hashtag text-brand"></i> C#
-                                </span>
-                                <span class="font-mono text-sm text-brand">60%</span>
-                            </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="60%"></div></div>
                         </div>
                     </div>
 
-                    <!-- SysAdmin & Network Skills -->
-                    <div>
-                        <h3 class="font-syne font-bold text-xl mb-6 text-white border-b border-border pb-2">Système & Réseau</h3>
-                        <div class="reveal-up mb-5" style="transition-delay: 400ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-brands fa-linux text-brand"></i> Administration Linux
-                                </span>
-                                <span class="font-mono text-sm text-brand">80%</span>
+                    <!-- Skill 4 -->
+                    <div class="glass-card rounded-3xl p-6 sm:p-8 border border-border reveal-up">
+                        <div class="flex items-center gap-3 mb-6">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-brand-light flex items-center justify-center">
+                                <i class="fa-solid fa-wrenches text-lg text-white"></i>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="80%"></div></div>
+                            <h3 class="font-syne font-bold text-lg sm:text-xl text-white">Tools & Méthodologie</h3>
                         </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 500ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-solid fa-network-wired text-brand"></i> Routage & Réseaux
-                                </span>
-                                <span class="font-mono text-sm text-brand">70%</span>
+                        <div class="space-y-4">
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Git / GitHub</span>
+                                    <span class="text-xs text-brand font-bold">80%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="80%"></div>
+                                </div>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="70%"></div></div>
-                        </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 600ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-brands fa-docker text-brand"></i> Docker / DevOps
-                                </span>
-                                <span class="font-mono text-sm text-brand">75%</span>
+                            <div>
+                                <div class="flex justify-between items-center mb-2">
+                                    <span class="text-sm font-mono text-text-secondary">Agile / Scrum</span>
+                                    <span class="text-xs text-brand font-bold">75%</span>
+                                </div>
+                                <div class="skill-track">
+                                    <div class="skill-fill" data-width="75%"></div>
+                                </div>
                             </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="75%"></div></div>
-                        </div>
-
-                        <div class="reveal-up mb-5" style="transition-delay: 700ms;">
-                            <div class="flex justify-between items-center mb-2">
-                                <span class="font-dm font-medium text-sm text-white flex items-center gap-2">
-                                    <i class="fa-solid fa-dharmachakra text-brand"></i> Kubernetes
-                                </span>
-                                <span class="font-mono text-sm text-brand">40%</span>
-                            </div>
-                            <div class="skill-track"><div class="skill-fill" data-width="40%"></div></div>
                         </div>
                     </div>
-
                 </div>
 
-                <!-- Chips -->
-                <div class="mt-12 pt-8 border-t border-border reveal-up text-center">
-                    <p class="text-xs text-text-secondary uppercase tracking-[0.15em] mb-4 font-dm">Outils & Environnements</p>
-                    <div class="flex flex-wrap justify-center gap-2">
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Git / GitHub</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">VS Code</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Bash / Terminal</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Nginx / Apache</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">SQL / MySQL</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Kubernetes</span>
-                        <span class="px-3 py-1.5 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">.NET</span>
+                <!-- Tech Tags -->
+                <div class="mt-12 sm:mt-16 reveal-up">
+                    <h3 class="font-syne font-bold text-2xl sm:text-3xl text-white mb-6 text-center">Technologies</h3>
+                    <div class="flex flex-wrap justify-center gap-2 sm:gap-3">
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Python</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">JavaScript</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">PHP</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">C#</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Java</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Flutter</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Django</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">FastAPI</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Linux</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Docker</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">Git / GitHub</span>
+                        <span class="px-3 sm:px-4 py-2 text-xs font-mono rounded-lg border border-border bg-dark text-text-secondary hover:border-border-brand hover:text-brand transition-colors cursor-default">SQL / MySQL</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="py-24 bg-dark relative">
+        <section id="projects" class="py-20 sm:py-32 bg-dark relative">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="mb-16 text-center reveal-up">
+                <div class="mb-12 sm:mb-16 text-center reveal-up">
                     <span class="inline-flex items-center gap-2 text-xs font-bold tracking-[0.2em] uppercase text-brand mb-4">
-                        <span class="w-6 h-px bg-brand"></span>
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
                         Portfolio
-                        <span class="w-6 h-px bg-brand"></span>
+                        <span class="w-4 sm:w-6 h-px bg-brand"></span>
                     </span>
-                    <h2 class="font-syne font-bold text-4xl lg:text-5xl text-white">Réalisations Récentes</h2>
+                    <h2 class="font-syne font-bold text-3xl sm:text-4xl lg:text-5xl text-white">Réalisations Récentes</h2>
                 </div>
 
-                <div class="grid md:grid-cols-2 gap-8">
+                <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
                     <!-- Project 1 -->
                     <div class="glass-card rounded-3xl overflow-hidden group border border-border hover:border-border-brand transition-all duration-500 reveal-up">
-                        <div class="h-64 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden flex items-center justify-center">
-                            <i class="fa-solid fa-laptop-code text-7xl text-brand/30 group-hover:scale-110 transition-transform duration-500 group-hover:text-brand"></i>
+                        <div class="h-48 sm:h-64 bg-gradient-to-br from-gray-900 to-black relative overflow-hidden flex items-center justify-center">
+                            <i class="fa-solid fa-laptop-code text-5xl sm:text-7xl text-brand/30 group-hover:scale-110 transition-transform duration-500 group-hover:text-brand"></i>
                             <div class="absolute top-4 left-4">
                                 <span class="bg-dark/80 backdrop-blur border border-border text-white text-xs px-3 py-1.5 rounded-lg font-mono">Web App</span>
                             </div>
                         </div>
-                        <div class="p-8">
-                            <h3 class="font-syne font-bold text-2xl text-white mb-3">Plateforme E-Learning</h3>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-syne font-bold text-xl sm:text-2xl text-white mb-3">Plateforme E-Learning</h3>
                             <p class="text-text-secondary text-sm leading-relaxed mb-6">Application complète pour la gestion de cours en ligne, intégrant un système d'authentification et un tableau de bord administrateur.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="text-[11px] font-mono px-3 py-1 rounded-lg bg-dark-raised border border-border text-text-secondary">PHP</span>
@@ -585,15 +409,15 @@
                     </div>
 
                     <!-- Project 2 -->
-                    <div class="glass-card rounded-3xl overflow-hidden group border border-border hover:border-border-brand transition-all duration-500 reveal-up" style="transition-delay: 100ms;">
-                        <div class="h-64 bg-gradient-to-br from-brand/20 to-black relative overflow-hidden flex items-center justify-center">
-                            <i class="fa-solid fa-server text-7xl text-brand/30 group-hover:scale-110 transition-transform duration-500 group-hover:text-brand"></i>
+                    <div class="glass-card rounded-3xl overflow-hidden group border border-border hover:border-border-brand transition-all duration-500 reveal-up">
+                        <div class="h-48 sm:h-64 bg-gradient-to-br from-brand/20 to-black relative overflow-hidden flex items-center justify-center">
+                            <i class="fa-solid fa-server text-5xl sm:text-7xl text-brand/30 group-hover:scale-110 transition-transform duration-500 group-hover:text-brand"></i>
                             <div class="absolute top-4 left-4">
                                 <span class="bg-dark/80 backdrop-blur border border-border text-white text-xs px-3 py-1.5 rounded-lg font-mono">Système</span>
                             </div>
                         </div>
-                        <div class="p-8">
-                            <h3 class="font-syne font-bold text-2xl text-white mb-3">Administration & Monitoring</h3>
+                        <div class="p-6 sm:p-8">
+                            <h3 class="font-syne font-bold text-xl sm:text-2xl text-white mb-3">Administration & Monitoring</h3>
                             <p class="text-text-secondary text-sm leading-relaxed mb-6">Ensemble de scripts permettant d'automatiser le déploiement, la sauvegarde et la surveillance de serveurs Linux.</p>
                             <div class="flex flex-wrap gap-2">
                                 <span class="text-[11px] font-mono px-3 py-1 rounded-lg bg-dark-raised border border-border text-text-secondary">Python</span>
@@ -607,28 +431,28 @@
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="py-24 relative overflow-hidden bg-dark-raised">
-            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-brand/5 blur-[100px] pointer-events-none"></div>
+        <section id="contact" class="py-20 sm:py-32 relative overflow-hidden bg-dark-raised">
+            <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] sm:w-[800px] h-[300px] bg-brand/5 blur-[100px] pointer-events-none"></div>
             
             <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal-up">
-                <h2 class="font-syne font-bold text-5xl lg:text-7xl text-white mb-8">Collaborons.</h2>
-                <p class="text-xl text-text-secondary mb-16 font-dm max-w-2xl mx-auto">
+                <h2 class="font-syne font-bold text-4xl sm:text-5xl lg:text-7xl text-white mb-6 sm:mb-8">Collaborons.</h2>
+                <p class="text-lg sm:text-xl text-text-secondary mb-12 sm:mb-16 font-dm max-w-2xl mx-auto px-2">
                     Une opportunité de stage, d'alternance ou un projet d'infrastructure à discuter ? Retrouvez-moi sur mes réseaux.
                 </p>
                 
-                <div class="flex flex-wrap justify-center gap-8">
+                <div class="flex flex-wrap justify-center gap-6 sm:gap-8">
                     <!-- GitHub -->
                     <a href="https://github.com/frims-bit" target="_blank" class="group relative">
                         <div class="absolute inset-0 bg-brand rounded-2xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative w-20 h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-3xl text-text-secondary group-hover:text-white group-hover:border-border-brand transition-all transform group-hover:-translate-y-2">
+                        <div class="relative w-16 h-16 sm:w-20 sm:h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-2xl sm:text-3xl text-text-secondary group-hover:text-white group-hover:border-border-brand transition-all transform group-hover:-translate-y-2">
                             <i class="fa-brands fa-github"></i>
                         </div>
                     </a>
                     
                     <!-- Email -->
-                    <a href="mailto:anzoumanaryan20@gmail.com" class="group relative">
+                    <a href="mailto:ryananzoumana17@gmail.com" class="group relative">
                         <div class="absolute inset-0 bg-brand rounded-2xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative w-20 h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-3xl text-text-secondary group-hover:text-white group-hover:border-border-brand transition-all transform group-hover:-translate-y-2">
+                        <div class="relative w-16 h-16 sm:w-20 sm:h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-2xl sm:text-3xl text-text-secondary group-hover:text-white group-hover:border-border-brand transition-all transform group-hover:-translate-y-2">
                             <i class="fa-solid fa-envelope"></i>
                         </div>
                     </a>
@@ -636,7 +460,7 @@
                     <!-- WhatsApp -->
                     <a href="https://wa.me/22870933462" target="_blank" class="group relative">
                         <div class="absolute inset-0 bg-[#25D366] rounded-2xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative w-20 h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-3xl text-text-secondary group-hover:text-[#25D366] group-hover:border-[#25D366]/50 transition-all transform group-hover:-translate-y-2">
+                        <div class="relative w-16 h-16 sm:w-20 sm:h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-2xl sm:text-3xl text-text-secondary group-hover:text-[#25D366] group-hover:border-[#25D366]/50 transition-all transform group-hover:-translate-y-2">
                             <i class="fa-brands fa-whatsapp"></i>
                         </div>
                     </a>
@@ -644,7 +468,7 @@
                     <!-- Instagram -->
                     <a href="https://instagram.com/ryan.faik_" target="_blank" class="group relative">
                         <div class="absolute inset-0 bg-[#E4405F] rounded-2xl blur opacity-0 group-hover:opacity-40 transition-opacity duration-300"></div>
-                        <div class="relative w-20 h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-3xl text-text-secondary group-hover:text-[#E4405F] group-hover:border-[#E4405F]/50 transition-all transform group-hover:-translate-y-2">
+                        <div class="relative w-16 h-16 sm:w-20 sm:h-20 glass-card rounded-2xl border border-border flex items-center justify-center text-2xl sm:text-3xl text-text-secondary group-hover:text-[#E4405F] group-hover:border-[#E4405F]/50 transition-all transform group-hover:-translate-y-2">
                             <i class="fa-brands fa-instagram"></i>
                         </div>
                     </a>
@@ -654,8 +478,8 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t border-border py-8 text-center bg-dark">
-        <p class="font-mono text-xs text-text-secondary uppercase tracking-widest">
+    <footer class="border-t border-border py-6 sm:py-8 text-center bg-dark">
+        <p class="font-mono text-xs text-text-secondary uppercase tracking-widest px-4">
             © 2026 RYAN ANZOUMANA. TOUS DROITS RÉSERVÉS.
         </p>
     </footer>
